@@ -366,7 +366,7 @@ const LANGUAGE_CONTENT = {
       switcherAria: 'Switch language',
       logoTagline: 'Quality You Can Trust',
       backToTop: 'Back to top',
-      nav: ['Home', 'About', 'Services', 'Projects', 'Industries', 'Testimonials', 'Contact'],
+      nav: ['Home', 'About', 'Services', 'Order', 'Projects', 'Industries', 'Testimonials', 'Contact'],
       callNow: 'Call Now',
       getQuote: 'Get Quote',
       previousImage: 'Previous image',
@@ -575,6 +575,68 @@ const LANGUAGE_CONTENT = {
         }
       ]
     },
+    order: {
+      title: 'Place Order | A1 Enterprise',
+      description: 'Place your order with A1 Enterprise for pond liners, tarpaulins, HDPE/PP bags, poultry curtains, and more.',
+      navButton: 'Place Order',
+      backToHome: 'Back to Home',
+      heroBadge: 'Quick Order',
+      heroTitle: 'Place Your Order in Minutes',
+      heroSubtitle: 'Share your product details, quantity, and delivery location. Our team will confirm availability, final pricing, and dispatch details with you quickly.',
+      highlights: [
+        { title: 'Fast Response', desc: 'We review new requests within one business day.' },
+        { title: 'Bulk Supply Support', desc: 'Ideal for dealers, farms, contractors, and industrial buyers.' },
+        { title: 'Direct Assistance', desc: 'Need help choosing a product? Call our team anytime.' }
+      ],
+      statNumber: '500+',
+      statLabel: 'Orders & project deliveries supported',
+      checklist: ['RPE Pond Liners', 'Tarpaulin Solutions', 'HDPE / PP Bags', 'Poultry Curtains'],
+      processBadge: 'How It Works',
+      processTitle: 'Simple Ordering Process',
+      steps: [
+        { title: 'Submit your requirement', desc: 'Choose the product, quantity, and delivery details in the form.' },
+        { title: 'Get confirmation', desc: 'Our team contacts you with pricing, stock availability, and dispatch timing.' },
+        { title: 'Finalize and receive', desc: 'Approve the order and we help coordinate supply or installation where applicable.' }
+      ],
+      supportTitle: 'Need help before ordering?',
+      supportText: 'Talk to our team if you are unsure about product size, GSM, thickness, or quantity.',
+      supportButtons: ['Call +91 7972345360', 'View Products'],
+      formBadge: 'Order Request',
+      formTitle: 'Tell Us What You Need',
+      formIntro: 'Fill out the form and our team will contact you with the next steps.',
+      formLabels: ['Full Name *', 'Phone Number *', 'Product *', 'Quantity *', 'City *', 'State', 'Delivery Address *', 'Additional Requirement'],
+      placeholders: [
+        'Enter your full name',
+        'Enter your phone number',
+        'Ex: 500 sq ft / 100 bags',
+        'Enter your city',
+        'Enter your state',
+        'Enter delivery address',
+        'Mention size, thickness, color, dispatch timeline, or any special note'
+      ],
+      productOptions: [
+        'Select a product',
+        'RPE Pond Liner',
+        'Agriculture Tarpaulin',
+        'Tarpaulin for Fisheries & Water Storage',
+        'Tarpaulin for Covering Materials',
+        'Truck Tarpaulin',
+        'HDPE & PP Bags',
+        'Poultry Curtains'
+      ],
+      submit: 'Submit Order Request',
+      sending: 'Submitting...',
+      success: 'Thank you! Your order request has been sent. Our team will contact you shortly.',
+      note: 'This page collects your order request only. Final pricing and confirmation will be shared by our team after review.',
+      formErrors: {
+        nameRequired: 'Please enter your full name.',
+        phoneRequired: 'Please enter your phone number.',
+        productRequired: 'Please select a product.',
+        quantityRequired: 'Please enter the quantity you need.',
+        cityRequired: 'Please enter your city.',
+        addressRequired: 'Please enter your delivery address.'
+      }
+    },
     services: {
       title: 'All Services | A1 Enterprise',
       description: 'A1 Enterprise – All Products & Services: RPE Pond Liner, Tarpaulin, HDPE/PP Bags, Poultry Curtains and more.',
@@ -583,6 +645,7 @@ const LANGUAGE_CONTENT = {
       heroTitle: 'All Services & Products',
       heroSubtitle: 'RPE pond liner, tarpaulin, truck tarpaulin, HDPE / PP bags, and poultry curtains — available at reasonable rates with installation support for selected products.',
       addPhoto: 'Add Product Photo',
+      orderCta: 'Place Order for Any Product',
       cards: [
         { title: 'RPE Pond Liner', chip: 'Installation Available' },
         { title: 'Agriculture Tarpaulin', chip: 'IS 15351' },
@@ -599,7 +662,7 @@ const LANGUAGE_CONTENT = {
       switcherAria: 'भाषा बदलें',
       logoTagline: 'भरोसेमंद गुणवत्ता',
       backToTop: 'ऊपर जाएं',
-      nav: ['होम', 'हमारे बारे में', 'सेवाएं', 'प्रोजेक्ट्स', 'उद्योग', 'प्रशंसापत्र', 'संपर्क'],
+      nav: ['होम', 'हमारे बारे में', 'सेवाएं', 'ऑर्डर', 'प्रोजेक्ट्स', 'उद्योग', 'प्रशंसापत्र', 'संपर्क'],
       callNow: 'अभी कॉल करें',
       getQuote: 'कोटेशन लें',
       previousImage: 'पिछली छवि',
@@ -808,6 +871,68 @@ const LANGUAGE_CONTENT = {
         }
       ]
     },
+    order: {
+      title: 'ऑर्डर करें | A1 Enterprise',
+      description: 'A1 Enterprise के pond liners, tarpaulins, HDPE/PP bags और poultry curtains के लिए ऑर्डर अनुरोध भेजें।',
+      navButton: 'ऑर्डर करें',
+      backToHome: 'होम पर वापस जाएं',
+      heroBadge: 'त्वरित ऑर्डर',
+      heroTitle: 'कुछ ही मिनटों में अपना ऑर्डर भेजें',
+      heroSubtitle: 'अपना उत्पाद, मात्रा और डिलीवरी लोकेशन साझा करें। हमारी टीम आपसे उपलब्धता, अंतिम कीमत और डिस्पैच जानकारी के साथ जल्दी संपर्क करेगी।',
+      highlights: [
+        { title: 'तेज प्रतिक्रिया', desc: 'हम नए ऑर्डर अनुरोध एक कार्यदिवस के भीतर देखते हैं।' },
+        { title: 'थोक सप्लाई सहायता', desc: 'डीलर, फार्म, कॉन्ट्रैक्टर और औद्योगिक खरीदारों के लिए उपयुक्त।' },
+        { title: 'सीधी सहायता', desc: 'उत्पाद चुनने में मदद चाहिए? हमारी टीम से कभी भी बात करें।' }
+      ],
+      statNumber: '500+',
+      statLabel: 'ऑर्डर और प्रोजेक्ट डिलीवरी में सहायता',
+      checklist: ['RPE Pond Liners', 'Tarpaulin Solutions', 'HDPE / PP Bags', 'Poultry Curtains'],
+      processBadge: 'कैसे काम करता है',
+      processTitle: 'सरल ऑर्डर प्रक्रिया',
+      steps: [
+        { title: 'अपनी आवश्यकता भेजें', desc: 'फॉर्म में उत्पाद, मात्रा और डिलीवरी विवरण भरें।' },
+        { title: 'कन्फर्मेशन पाएं', desc: 'हमारी टीम आपसे कीमत, स्टॉक उपलब्धता और डिस्पैच समय के साथ संपर्क करेगी।' },
+        { title: 'फाइनल करें और प्राप्त करें', desc: 'ऑर्डर कन्फर्म करें और हम सप्लाई या इंस्टॉलेशन समन्वय में मदद करेंगे।' }
+      ],
+      supportTitle: 'ऑर्डर से पहले मदद चाहिए?',
+      supportText: 'यदि आप product size, GSM, thickness या quantity को लेकर sure नहीं हैं, तो हमारी टीम से बात करें।',
+      supportButtons: ['कॉल करें +91 7972345360', 'उत्पाद देखें'],
+      formBadge: 'ऑर्डर अनुरोध',
+      formTitle: 'अपनी आवश्यकता बताएं',
+      formIntro: 'फॉर्म भरें, हमारी टीम अगले स्टेप्स के साथ आपसे संपर्क करेगी।',
+      formLabels: ['पूरा नाम *', 'फोन नंबर *', 'उत्पाद *', 'मात्रा *', 'शहर *', 'राज्य', 'डिलीवरी पता *', 'अतिरिक्त आवश्यकता'],
+      placeholders: [
+        'अपना पूरा नाम दर्ज करें',
+        'अपना फोन नंबर दर्ज करें',
+        'उदाहरण: 500 sq ft / 100 bags',
+        'अपना शहर दर्ज करें',
+        'अपना राज्य दर्ज करें',
+        'डिलीवरी पता दर्ज करें',
+        'साइज, thickness, color, dispatch timeline या कोई खास नोट लिखें'
+      ],
+      productOptions: [
+        'उत्पाद चुनें',
+        'RPE Pond Liner',
+        'Agriculture Tarpaulin',
+        'Fisheries और Water Storage के लिए Tarpaulin',
+        'कवरिंग मटेरियल के लिए Tarpaulin',
+        'Truck Tarpaulin',
+        'HDPE और PP Bags',
+        'Poultry Curtains'
+      ],
+      submit: 'ऑर्डर अनुरोध भेजें',
+      sending: 'भेजा जा रहा है...',
+      success: 'धन्यवाद! आपका ऑर्डर अनुरोध भेज दिया गया है। हमारी टीम जल्द ही आपसे संपर्क करेगी।',
+      note: 'यह पेज केवल आपका ऑर्डर अनुरोध लेता है। अंतिम कीमत और कन्फर्मेशन हमारी टीम समीक्षा के बाद साझा करेगी।',
+      formErrors: {
+        nameRequired: 'कृपया अपना पूरा नाम दर्ज करें।',
+        phoneRequired: 'कृपया अपना फोन नंबर दर्ज करें।',
+        productRequired: 'कृपया उत्पाद चुनें।',
+        quantityRequired: 'कृपया आवश्यक मात्रा दर्ज करें।',
+        cityRequired: 'कृपया अपना शहर दर्ज करें।',
+        addressRequired: 'कृपया डिलीवरी पता दर्ज करें।'
+      }
+    },
     services: {
       title: 'सभी सेवाएं | A1 Enterprise',
       description: 'A1 Enterprise – RPE Pond Liner, Tarpaulin, HDPE/PP Bags, Poultry Curtains और अन्य उत्पाद।',
@@ -816,6 +941,7 @@ const LANGUAGE_CONTENT = {
       heroTitle: 'सभी सेवाएं और उत्पाद',
       heroSubtitle: 'RPE pond liner, tarpaulin, truck tarpaulin, HDPE / PP bags और poultry curtains उचित दरों पर उपलब्ध हैं, साथ में चुनिंदा उत्पादों पर इंस्टॉलेशन सहायता भी मिलती है।',
       addPhoto: 'उत्पाद फोटो जोड़ें',
+      orderCta: 'किसी भी उत्पाद के लिए ऑर्डर करें',
       cards: [
         { title: 'RPE Pond Liner', chip: 'इंस्टॉलेशन उपलब्ध' },
         { title: 'Agriculture Tarpaulin', chip: 'IS 15351' },
@@ -1067,6 +1193,7 @@ function applyServicesTranslations(bundle) {
   setText('.services-page-hero .section-badge', services.heroBadge);
   setText('.services-page-hero .section-title', services.heroTitle);
   setText('.services-page-hero .section-subtitle', services.heroSubtitle);
+  setElementText(document.querySelector('.services-order-cta'), services.orderCta);
   setTextList('.service-card-cover-placeholder span', Array(6).fill(services.addPhoto));
 
   document.querySelectorAll('.services-grid .service-card').forEach(function (card, index) {
@@ -1098,6 +1225,68 @@ function applyServicesTranslations(bundle) {
   });
 }
 
+function applyOrderTranslations(bundle) {
+  const order = bundle.order;
+
+  document.title = order.title;
+  setAttr('meta[name="description"]', 'content', order.description);
+
+  setElementText(document.querySelector('.services-back-link'), order.backToHome);
+  setElementText(document.querySelector('.btn-quote'), order.navButton);
+  setText('.order-page-hero .section-badge', order.heroBadge);
+  setText('.order-page-hero .section-title', order.heroTitle);
+  setText('.order-page-hero .section-subtitle', order.heroSubtitle);
+  setText('.order-hero-stat-number', order.statNumber);
+  setText('.order-hero-stat-label', order.statLabel);
+  setTextList('.order-hero-checklist li', order.checklist);
+
+  document.querySelectorAll('.order-highlight-card').forEach(function (card, index) {
+    const content = order.highlights[index];
+    if (!content) return;
+    const title = card.querySelector('strong');
+    const desc = card.querySelector('span');
+    if (title) title.textContent = content.title;
+    if (desc) desc.textContent = content.desc;
+  });
+
+  setText('.order-info-card .section-badge', order.processBadge);
+  setText('.order-info-card h2', order.processTitle);
+  document.querySelectorAll('.order-step').forEach(function (step, index) {
+    const content = order.steps[index];
+    if (!content) return;
+    const title = step.querySelector('h3');
+    const desc = step.querySelector('p');
+    if (title) title.textContent = content.title;
+    if (desc) desc.textContent = content.desc;
+  });
+
+  setText('.order-support-card h3', order.supportTitle);
+  setText('.order-support-card p', order.supportText);
+  setElementText(document.querySelector('.order-support-actions .btn-call'), order.supportButtons[0]);
+  setElementText(document.querySelector('.order-support-actions .btn-outline-hero'), order.supportButtons[1]);
+
+  setText('.order-form-head .section-badge', order.formBadge);
+  setText('.order-form-head h2', order.formTitle);
+  setText('.order-form-head p', order.formIntro);
+  setTextList(
+    'label[for="order-name"], label[for="order-phone"], label[for="order-product"], label[for="order-quantity"], label[for="order-city"], label[for="order-state"], label[for="order-address"], label[for="order-notes"]',
+    order.formLabels
+  );
+  setAttr('#order-name', 'placeholder', order.placeholders[0]);
+  setAttr('#order-phone', 'placeholder', order.placeholders[1]);
+  setAttr('#order-quantity', 'placeholder', order.placeholders[2]);
+  setAttr('#order-city', 'placeholder', order.placeholders[3]);
+  setAttr('#order-state', 'placeholder', order.placeholders[4]);
+  setAttr('#order-address', 'placeholder', order.placeholders[5]);
+  setAttr('#order-notes', 'placeholder', order.placeholders[6]);
+  document.querySelectorAll('#order-product option').forEach(function (option, index) {
+    if (typeof order.productOptions[index] === 'string') option.textContent = order.productOptions[index];
+  });
+  setElementText(document.querySelector('.order-submit-btn'), order.submit);
+  setElementText(document.querySelector('#order-success-message'), order.success);
+  setText('.order-form-note', order.note);
+}
+
 function applyLanguage(language) {
   setStoredLanguage(language);
   const bundle = getLanguageBundle(language);
@@ -1105,6 +1294,8 @@ function applyLanguage(language) {
 
   if (getCurrentPage() === 'services') {
     applyServicesTranslations(bundle);
+  } else if (getCurrentPage() === 'order') {
+    applyOrderTranslations(bundle);
   } else {
     applyHomeTranslations(bundle);
   }
@@ -1260,6 +1451,122 @@ function applyLanguage(language) {
       ['name', 'email', 'subject', 'message'].forEach(clearError);
 
     }, 1500); // 1.5s simulated network delay
+  });
+})();
+
+
+/* ============================================================
+   9. ORDER FORM VALIDATION & SUBMISSION
+   - Validates the basic order request fields
+   - Shows success feedback after simulated submission
+   ============================================================ */
+(function initOrderForm() {
+  const form = document.getElementById('order-form');
+  const successMessage = document.getElementById('order-success-message');
+
+  if (!form) return;
+
+  function showError(fieldId, message) {
+    const errorEl = document.getElementById(fieldId + '-error');
+    const inputEl = document.getElementById(fieldId);
+
+    if (errorEl) errorEl.textContent = message;
+    if (inputEl) inputEl.classList.add('error');
+  }
+
+  function clearError(fieldId) {
+    const errorEl = document.getElementById(fieldId + '-error');
+    const inputEl = document.getElementById(fieldId);
+
+    if (errorEl) errorEl.textContent = '';
+    if (inputEl) inputEl.classList.remove('error');
+  }
+
+  function validateForm() {
+    let isValid = true;
+    const orderContent = getLanguageBundle(getStoredLanguage()).order;
+
+    const name = document.getElementById('order-name').value.trim();
+    const phone = document.getElementById('order-phone').value.trim();
+    const product = document.getElementById('order-product').value.trim();
+    const quantity = document.getElementById('order-quantity').value.trim();
+    const city = document.getElementById('order-city').value.trim();
+    const address = document.getElementById('order-address').value.trim();
+
+    ['order-name', 'order-phone', 'order-product', 'order-quantity', 'order-city', 'order-address'].forEach(clearError);
+
+    if (!name) {
+      showError('order-name', orderContent.formErrors.nameRequired);
+      isValid = false;
+    }
+
+    if (!phone) {
+      showError('order-phone', orderContent.formErrors.phoneRequired);
+      isValid = false;
+    }
+
+    if (!product) {
+      showError('order-product', orderContent.formErrors.productRequired);
+      isValid = false;
+    }
+
+    if (!quantity) {
+      showError('order-quantity', orderContent.formErrors.quantityRequired);
+      isValid = false;
+    }
+
+    if (!city) {
+      showError('order-city', orderContent.formErrors.cityRequired);
+      isValid = false;
+    }
+
+    if (!address) {
+      showError('order-address', orderContent.formErrors.addressRequired);
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  ['order-name', 'order-phone', 'order-product', 'order-quantity', 'order-city', 'order-address'].forEach(function (fieldId) {
+    const inputEl = document.getElementById(fieldId);
+    if (!inputEl) return;
+
+    const eventName = inputEl.tagName === 'SELECT' ? 'change' : 'input';
+    inputEl.addEventListener(eventName, function () {
+      clearError(fieldId);
+    });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validateForm()) return;
+
+    const submitBtn = form.querySelector('.order-submit-btn');
+    const originalBtnHTML = submitBtn.innerHTML;
+    const orderContent = getLanguageBundle(getStoredLanguage()).order;
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin-icon"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+      ${orderContent.sending}
+    `;
+
+    setTimeout(function () {
+      form.reset();
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnHTML;
+
+      if (successMessage) {
+        successMessage.style.display = 'flex';
+        setTimeout(function () {
+          successMessage.style.display = 'none';
+        }, 6000);
+      }
+
+      ['order-name', 'order-phone', 'order-product', 'order-quantity', 'order-city', 'order-address'].forEach(clearError);
+      applyLanguage(getStoredLanguage());
+    }, 1500);
   });
 })();
 
