@@ -360,7 +360,7 @@ select {
   height: 100%;
   background: linear-gradient(90deg, var(--color-blue), var(--color-green));
   border-radius: var(--radius-full);
-  animation: loading 2s ease forwards;
+  animation: loading 0.7s ease forwards;
 }
 
 @keyframes loading {

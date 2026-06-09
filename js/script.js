@@ -6,31 +6,26 @@
 
 /* ============================================================
    1. LOADING SCREEN
-   - Fades out after page fully loads (or after 2.2s max)
+   - Hides after 800ms max — does NOT wait for external resources
+     (fonts, images) so the site feels instant
    ============================================================ */
 (function initLoadingScreen() {
   const loadingScreen = document.getElementById('loading-screen');
 
   if (!loadingScreen) return;
 
-  // Function to hide the loading screen
   function hideLoader() {
     loadingScreen.classList.add('hidden');
-    // Remove from DOM after transition completes
-    setTimeout(() => {
+    setTimeout(function () {
       if (loadingScreen.parentNode) {
         loadingScreen.parentNode.removeChild(loadingScreen);
       }
-    }, 600);
+    }, 500);
   }
 
-  // Hide after content loads or after 2.2 seconds max
-  window.addEventListener('load', function () {
-    setTimeout(hideLoader, 500);
-  });
-
-  // Failsafe: always hide after 2.5s even if load event is slow
-  setTimeout(hideLoader, 2500);
+  // Hide after 800ms — short enough to feel fast,
+  // long enough for the CSS progress bar animation to look complete
+  setTimeout(hideLoader, 800);
 })();
 
 
