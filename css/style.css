@@ -1671,6 +1671,111 @@ select {
 }
 
 /* ============================================================
+   SERVICES STANDALONE PAGE
+   ============================================================ */
+.services-page-hero {
+  padding: calc(var(--navbar-height) + 2.5rem) 0 2.5rem;
+  background: linear-gradient(135deg, #f0f5ff 0%, #ffffff 60%, #f0faf5 100%);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.services-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-blue);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.services-back-link:hover {
+  gap: 10px;
+}
+
+/* View All button — now an <a> tag */
+.btn-view-all-services {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.75rem 2rem;
+  background: var(--color-white);
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  border-radius: var(--radius-full);
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 2px 12px rgba(0,87,217,0.10);
+}
+
+.btn-view-all-services:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+  box-shadow: 0 6px 20px rgba(0,87,217,0.28);
+  transform: translateY(-2px);
+}
+
+.btn-view-all-services .view-all-icon {
+  transition: transform 0.2s ease;
+}
+
+.btn-view-all-services:hover .view-all-icon {
+  transform: translateX(4px);
+}
+
+/* Hidden extra service cards */
+.service-card-hidden {
+  display: none;
+}
+
+.service-card-hidden.service-card-visible {
+  display: flex;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* View All button row */
+.services-view-all-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-10);
+}
+
+.btn-view-all-services {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.75rem 2rem;
+  background: var(--color-white);
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  border-radius: var(--radius-full);
+  font-size: var(--text-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 2px 12px rgba(0,87,217,0.10);
+}
+
+.btn-view-all-services:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+  box-shadow: 0 6px 20px rgba(0,87,217,0.28);
+  transform: translateY(-2px);
+}
+
+.btn-view-all-services .view-all-icon {
+  transition: transform 0.3s ease;
+}
+
+.btn-view-all-services.expanded .view-all-icon {
+  transform: rotate(180deg);
+}
+
+/* ============================================================
    SERVICE DETAIL MODALS
    ============================================================ */
 .service-modal {

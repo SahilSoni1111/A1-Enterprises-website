@@ -832,3 +832,40 @@ console.log('%cA1 Enterprise Website Loaded ✓', 'color: #0057D9; font-weight: 
   });
 
 })();
+
+
+/* ============================================================
+   15. VIEW ALL SERVICES TOGGLE
+   - Shows 6 cards by default
+   - "View All Services" reveals hidden cards with animation
+   - Button text/icon toggles between expanded/collapsed
+   ============================================================ */
+(function initViewAllServices() {
+  const btn      = document.getElementById('btn-view-all-services');
+  const extras   = document.querySelectorAll('.service-card-hidden');
+  const label    = btn ? btn.querySelector('.view-all-label') : null;
+
+  if (!btn || !extras.length) return;
+
+  let expanded = false;
+
+  btn.addEventListener('click', function () {
+    expanded = !expanded;
+
+    extras.forEach(function (card, i) {
+      if (expanded) {
+        card.classList.add('service-card-visible');
+        // stagger each extra card
+        card.style.animationDelay = (i * 80) + 'ms';
+      } else {
+        card.classList.remove('service-card-visible');
+        card.style.animationDelay = '';
+      }
+    });
+
+    btn.classList.toggle('expanded', expanded);
+    if (label) {
+      label.textContent = expanded ? 'Show Less' : 'View All Services';
+    }
+  });
+})();
