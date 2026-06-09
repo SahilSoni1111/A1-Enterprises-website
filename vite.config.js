@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main:     resolve(__dirname, 'index.html'),
         services: resolve(__dirname, 'services.html'),
+        order:    resolve(__dirname, 'order.html'),
       }
     }
   }
