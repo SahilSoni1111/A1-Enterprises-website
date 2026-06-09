@@ -115,44 +115,38 @@
 
 /* ============================================================
    4. ACTIVE NAVIGATION HIGHLIGHT
-   - Uses IntersectionObserver to detect which section
-     is currently visible and marks the corresponding nav link
+   - Tracks scroll position and marks whichever section
+     is currently occupying the top of the viewport
    ============================================================ */
 (function initActiveNavHighlight() {
-  const sections  = document.querySelectorAll('section[id]');
-  const navLinks  = document.querySelectorAll('.nav-link');
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const navLinks = document.querySelectorAll('.nav-link');
+  const NAVBAR_H = 90; // px offset for fixed navbar
 
   if (!sections.length || !navLinks.length) return;
 
-  // Create an observer that fires when sections enter the viewport
-  const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        const sectionId = entry.target.getAttribute('id');
+  function setActive(id) {
+    navLinks.forEach(function (link) {
+      const isActive = link.getAttribute('href') === '#' + id;
+      link.classList.toggle('active', isActive);
+    });
+  }
 
-        // Remove active class from all links
-        navLinks.forEach(function (link) {
-          link.classList.remove('active');
-        });
+  function onScroll() {
+    const scrollY = window.scrollY + NAVBAR_H + 10;
+    let current = sections[0].id; // default to first section
 
-        // Add active class to the matching link
-        const activeLink = document.querySelector('.nav-link[href="#' + sectionId + '"]');
-        if (activeLink) {
-          activeLink.classList.add('active');
-        }
+    sections.forEach(function (section) {
+      if (section.offsetTop <= scrollY) {
+        current = section.id;
       }
     });
-  }, {
-    // Section is considered "active" when it occupies 30% of the viewport
-    threshold: 0.3,
-    // Start observing slightly before the section reaches the top
-    rootMargin: '-80px 0px -40% 0px'
-  });
 
-  // Start observing all sections
-  sections.forEach(function (section) {
-    observer.observe(section);
-  });
+    setActive(current);
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // run once on load
 })();
 
 
@@ -616,3 +610,225 @@
    UTILITY: Log initialization complete
    ============================================================ */
 console.log('%cA1 Enterprise Website Loaded ✓', 'color: #0057D9; font-weight: bold; font-size: 14px;');
+
+
+/* ============================================================
+   13. HERO BACKGROUND GALLERY CONTROLS
+   - Prev / Next buttons navigate between images
+   - Dot click focuses that image and makes it prominent
+   - "focused" mode pauses auto-scroll & boosts image visibility
+   ============================================================ */
+(function initHeroGallery() {
+  const scrollWrapper = document.getElementById('hero-bg-scroll');
+  const track         = document.getElementById('hero-bg-scroll-track');
+  const prevBtn       = document.getElementById('gallery-prev');
+  const nextBtn       = document.getElementById('gallery-next');
+  const dots          = document.querySelectorAll('.gallery-dot');
+
+  if (!scrollWrapper || !track) return;
+
+  // Only the first 6 items are "real" — the rest are duplicates for loop
+  const allItems    = track.querySelectorAll('.hero-bg-scroll-item');
+  const totalImages = 6; // number of unique images
+  let activeIndex   = -1; // -1 = no image focused (auto-scroll mode)
+  let focusedMode   = false;
+
+  // ── Helper: set active dot ──
+  function setActiveDot(index) {
+    dots.forEach(function (d) { d.classList.remove('active'); });
+    if (index >= 0 && dots[index]) {
+      dots[index].classList.add('active');
+    }
+  }
+
+  // ── Helper: highlight a specific image (both original + duplicate) ──
+  function highlightImage(index) {
+    allItems.forEach(function (item) { item.classList.remove('gallery-active'); });
+
+    if (index < 0) return; // deactivate all
+
+    // Highlight both the original and its duplicate (for seamless loop)
+    const targets = [allItems[index], allItems[index + totalImages]];
+    targets.forEach(function (el) {
+      if (el) el.classList.add('gallery-active');
+    });
+  }
+
+  // ── Enter focused mode: pause scroll, boost opacity ──
+  function enterFocused(index) {
+    focusedMode = true;
+    activeIndex = ((index % totalImages) + totalImages) % totalImages;
+    scrollWrapper.classList.add('gallery-focused');
+    highlightImage(activeIndex);
+    setActiveDot(activeIndex);
+
+    // Scroll the track so the focused image is near center
+    scrollToImage(activeIndex);
+  }
+
+  // ── Exit focused mode: resume auto-scroll ──
+  function exitFocused() {
+    focusedMode = false;
+    activeIndex = -1;
+    scrollWrapper.classList.remove('gallery-focused');
+    highlightImage(-1);
+    setActiveDot(0);
+    // Restore CSS animation
+    track.style.transform  = '';
+    track.style.animation  = '';
+    track.style.transition = '';
+  }
+
+  // ── Smoothly translate the track to show the target image centred ──
+  function scrollToImage(index) {
+    const item = allItems[index];
+    if (!item) return;
+
+    // Calculate how wide each item+gap is
+    const itemWidth = item.offsetWidth + 24; // 24 = gap
+    const wrapWidth = scrollWrapper.offsetWidth;
+    const offset    = (itemWidth * index) - (wrapWidth / 2) + (itemWidth / 2);
+
+    // Override the running CSS animation with a fixed translate
+    track.style.animation  = 'none';
+    track.style.transition = 'transform 0.55s cubic-bezier(0.4, 0, 0.2, 1)';
+    track.style.transform  = 'translateX(-' + Math.max(0, offset) + 'px)';
+
+    setTimeout(function () {
+      track.style.transition = '';
+    }, 600);
+  }
+
+  // ── Prev button ──
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const next = focusedMode ? activeIndex - 1 : 0;
+      enterFocused(next < 0 ? totalImages - 1 : next);
+    });
+  }
+
+  // ── Next button ──
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const next = focusedMode ? activeIndex + 1 : 0;
+      enterFocused(next >= totalImages ? 0 : next);
+    });
+  }
+
+  // ── Dot click: focus that image ──
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const index = parseInt(dot.dataset.index, 10);
+      if (focusedMode && activeIndex === index) {
+        // Clicking the same dot again exits focused mode
+        exitFocused();
+      } else {
+        enterFocused(index);
+      }
+    });
+  });
+
+  // ── Clicking an image directly focuses it ──
+  allItems.forEach(function (item, i) {
+    item.addEventListener('click', function () {
+      const realIndex = i % totalImages;
+      if (focusedMode && activeIndex === realIndex) {
+        exitFocused();
+      } else {
+        enterFocused(realIndex);
+      }
+    });
+  });
+
+  // ── Clicking outside gallery controls/images exits focused mode ──
+  document.addEventListener('click', function (e) {
+    if (!focusedMode) return;
+    const isInsideGallery = scrollWrapper.contains(e.target);
+    if (!isInsideGallery) {
+      exitFocused();
+    }
+  });
+
+  // ── Keyboard: left/right arrows navigate when focused ──
+  document.addEventListener('keydown', function (e) {
+    if (!focusedMode) return;
+    if (e.key === 'ArrowLeft') {
+      const prev = activeIndex - 1 < 0 ? totalImages - 1 : activeIndex - 1;
+      enterFocused(prev);
+    }
+    if (e.key === 'ArrowRight') {
+      const next = activeIndex + 1 >= totalImages ? 0 : activeIndex + 1;
+      enterFocused(next);
+    }
+    if (e.key === 'Escape') {
+      exitFocused();
+    }
+  });
+
+})();
+
+
+/* ============================================================
+   14. SERVICE DETAIL MODALS
+   - "View Details" button opens the corresponding modal
+   - Close button, backdrop click, or Escape key closes it
+   ============================================================ */
+(function initServiceModals() {
+
+  // Open modal
+  document.querySelectorAll('.btn-view-details').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const modalId = btn.getAttribute('data-modal');
+      const modal   = document.getElementById(modalId);
+      if (!modal) return;
+
+      modal.classList.add('open');
+      document.body.classList.add('modal-open');
+
+      // Move focus to the close button for accessibility
+      const closeBtn = modal.querySelector('.modal-close');
+      if (closeBtn) setTimeout(function () { closeBtn.focus(); }, 50);
+    });
+  });
+
+  // Close helpers
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('open');
+    document.body.classList.remove('modal-open');
+  }
+
+  // Close via × button
+  document.querySelectorAll('.modal-close').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      closeModal(btn.closest('.service-modal'));
+    });
+  });
+
+  // Close via backdrop click
+  document.querySelectorAll('.modal-backdrop').forEach(function (bd) {
+    bd.addEventListener('click', function () {
+      closeModal(bd.closest('.service-modal'));
+    });
+  });
+
+  // Close via Escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      const open = document.querySelector('.service-modal.open');
+      if (open) closeModal(open);
+    }
+  });
+
+  // Close CTA link also closes modal before navigating
+  document.querySelectorAll('.modal-cta').forEach(function (link) {
+    link.addEventListener('click', function () {
+      const open = document.querySelector('.service-modal.open');
+      if (open) closeModal(open);
+    });
+  });
+
+})();
