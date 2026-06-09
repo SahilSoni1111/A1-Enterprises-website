@@ -5,32 +5,7 @@
    ============================================================ */
 
 /* ============================================================
-   1. LOADING SCREEN
-   - Hides after 800ms max — does NOT wait for external resources
-     (fonts, images) so the site feels instant
-   ============================================================ */
-(function initLoadingScreen() {
-  const loadingScreen = document.getElementById('loading-screen');
-
-  if (!loadingScreen) return;
-
-  function hideLoader() {
-    loadingScreen.classList.add('hidden');
-    setTimeout(function () {
-      if (loadingScreen.parentNode) {
-        loadingScreen.parentNode.removeChild(loadingScreen);
-      }
-    }, 500);
-  }
-
-  // Hide after 800ms — short enough to feel fast,
-  // long enough for the CSS progress bar animation to look complete
-  setTimeout(hideLoader, 800);
-})();
-
-
-/* ============================================================
-   2. STICKY NAVBAR
+   1. STICKY NAVBAR
    - Adds "scrolled" class when user scrolls past 50px
    - This triggers CSS to add shadow and solid background
    ============================================================ */
@@ -56,7 +31,7 @@
 
 
 /* ============================================================
-   3. MOBILE HAMBURGER MENU
+   2. MOBILE HAMBURGER MENU
    - Toggles the navigation on mobile devices
    - Closes menu when a nav link is clicked
    - Closes menu when clicking outside
@@ -102,7 +77,7 @@
 
 
 /* ============================================================
-   4. SMOOTH SCROLLING
+   3. SMOOTH SCROLLING
    - Handles all anchor links that start with "#"
    - Offsets scroll by navbar height so content isn't hidden
    ============================================================ */
@@ -139,7 +114,7 @@
 
 
 /* ============================================================
-   5. ACTIVE NAVIGATION HIGHLIGHT
+   4. ACTIVE NAVIGATION HIGHLIGHT
    - Uses IntersectionObserver to detect which section
      is currently visible and marks the corresponding nav link
    ============================================================ */
@@ -182,7 +157,7 @@
 
 
 /* ============================================================
-   6. SCROLL ANIMATIONS
+   5. SCROLL ANIMATIONS
    - Uses IntersectionObserver to add "animated" class
      to elements with "animate-on-scroll" when they enter view
    ============================================================ */
@@ -229,7 +204,7 @@
 
 
 /* ============================================================
-   7. COUNTER ANIMATION
+   6. COUNTER ANIMATION
    - Animates numeric counters when they scroll into view
    - Reads target value from data-target attribute
    - Reads suffix (e.g. "+", "%") from data-suffix attribute
@@ -280,7 +255,7 @@
 
 
 /* ============================================================
-   8. TESTIMONIAL SLIDER
+   7. TESTIMONIAL SLIDER
    - Previous / Next buttons to cycle through testimonials
    - Dot indicators that update with current slide
    - Auto-play every 5 seconds (pauses on user interaction)
@@ -385,7 +360,7 @@
 
 
 /* ============================================================
-   9. CONTACT FORM VALIDATION & SUBMISSION
+   8. CONTACT FORM VALIDATION & SUBMISSION
    - Validates all required fields
    - Shows inline error messages
    - Shows success message on valid submit
@@ -523,7 +498,7 @@
 
 
 /* ============================================================
-   10. BACK TO TOP BUTTON
+   9. BACK TO TOP BUTTON
    - Shows when user scrolls down 400px
    - Smooth scrolls back to top on click
    ============================================================ */
@@ -552,7 +527,7 @@
 
 
 /* ============================================================
-   11. HERO STATS ANIMATION
+   10. HERO STATS ANIMATION
    - Adds a CSS spin class to the loading button dynamically
    ============================================================ */
 (function addSpinStyles() {
@@ -572,7 +547,7 @@
 
 
 /* ============================================================
-   12. TOUCH SWIPE SUPPORT FOR TESTIMONIALS
+   11. TOUCH SWIPE SUPPORT FOR TESTIMONIALS
    - Allows swiping left/right on mobile devices
    ============================================================ */
 (function initTouchSwipe() {
@@ -613,7 +588,7 @@
 
 
 /* ============================================================
-   13. FOOTER LINKS — SMOOTH SCROLL
+   12. FOOTER LINKS — SMOOTH SCROLL
    - Ensures footer nav links also scroll smoothly
    ============================================================ */
 (function initFooterLinks() {
