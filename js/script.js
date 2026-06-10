@@ -490,7 +490,7 @@ const LANGUAGE_CONTENT = {
         introTitle: 'Let\'s Start a Conversation',
         introText: 'Ready to take your business to the next level? Reach out to us and our expert team will get back to you promptly.',
         infoTitles: ['Our Office', 'Phone Number', 'Email Address', 'Working Hours'],
-        workingHours: 'Monday – Friday: 9:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 2:00 PM',
+        workingHours: 'Monday – Saturday: 9:00 AM – 5:00 PM',
         formLabels: ['Full Name *', 'Email Address *', 'Phone Number', 'Subject *', 'Message *'],
         placeholders: [
           'Enter your full name',
@@ -507,7 +507,7 @@ const LANGUAGE_CONTENT = {
         headings: ['Our Services', 'Quick Links', 'Contact Info'],
         serviceLinks: ['Industrial Solutions', 'Engineering Services', 'Manufacturing Support', 'Business Consulting', 'Project Management', 'Supply Chain Solutions'],
         quickLinks: ['Home', 'About Us', 'Our Projects', 'Industries', 'Testimonials', 'Contact Us'],
-        hours: 'Mon-Fri: 9AM – 6PM IST',
+        hours: 'Mon-Sat: 9AM – 5PM IST',
         copyright: '© 2026 A1 Enterprise. All Rights Reserved. | Designed with excellence.',
         bottomLinks: ['Privacy Policy', 'Terms of Service', 'Sitemap']
       },
@@ -802,7 +802,7 @@ const LANGUAGE_CONTENT = {
         introTitle: 'बातचीत शुरू करें',
         introText: 'अपने व्यवसाय को अगले स्तर पर ले जाने के लिए तैयार हैं? हमसे संपर्क करें, हमारी टीम जल्द ही आपसे जुड़ेगी।',
         infoTitles: ['हमारा कार्यालय', 'फोन नंबर', 'ईमेल पता', 'कार्य समय'],
-        workingHours: 'सोमवार – शुक्रवार: 9:00 AM – 6:00 PM<br>शनिवार: 10:00 AM – 2:00 PM',
+        workingHours: 'सोमवार – शनिवार: 9:00 AM – 5:00 PM',
         formLabels: ['पूरा नाम *', 'ईमेल पता *', 'फोन नंबर', 'विषय *', 'संदेश *'],
         placeholders: [
           'अपना पूरा नाम दर्ज करें',
@@ -819,7 +819,7 @@ const LANGUAGE_CONTENT = {
         headings: ['हमारी सेवाएं', 'त्वरित लिंक', 'संपर्क जानकारी'],
         serviceLinks: ['औद्योगिक समाधान', 'इंजीनियरिंग सेवाएं', 'मैन्युफैक्चरिंग सहायता', 'बिजनेस कंसल्टिंग', 'प्रोजेक्ट मैनेजमेंट', 'सप्लाई चेन समाधान'],
         quickLinks: ['होम', 'हमारे बारे में', 'हमारे प्रोजेक्ट्स', 'उद्योग', 'प्रशंसापत्र', 'संपर्क करें'],
-        hours: 'सोम-शुक्र: 9AM – 6PM IST',
+        hours: 'सोम-शनि: 9AM – 5PM IST',
         copyright: '© 2026 A1 Enterprise. सभी अधिकार सुरक्षित। | उत्कृष्टता के साथ डिज़ाइन किया गया।',
         bottomLinks: ['गोपनीयता नीति', 'सेवा की शर्तें', 'साइटमैप']
       },
