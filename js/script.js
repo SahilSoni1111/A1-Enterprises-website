@@ -405,6 +405,21 @@ const LANGUAGE_CONTENT = {
         storyBadge: 'Our Story',
         storyTitle: 'Driving Business Growth <span class="text-blue">Since 2009</span>',
         storyDesc: 'A1 Enterprise was founded with a clear vision: to deliver world-class corporate solutions that empower businesses to thrive. Over 15 years, we\'ve built a reputation for integrity, innovation, and impactful results.',
+        detailTexts: [
+          'We are supported with the most appropriate and advanced infrastructure equipped with innovative technology. Our modern setup helps us maintain a reputable image in the market while offering genuine and quality-tested products made from optimum quality raw material to meet international quality standards.',
+          'Our infrastructure is segregated into specialized departments such as manufacturing, quality testing, sales, and marketing, enabling smooth coordination and timely delivery of products.'
+        ],
+        teamTitle: 'Our Team',
+        teamIntro: 'We are backed by a competent team of immensely skilled professionals who possess strong domain knowledge and practical understanding of the technologies used in the production process. Their dedication helps us meet the diverse requirements of customers.',
+        teamRoles: [
+          'Designers',
+          'Machine operators',
+          'Unskilled labourers',
+          'Quality controllers',
+          'Warehousing & packaging experts',
+          'Sales and marketing professionals'
+        ],
+        teamOutro: 'All the latest machines installed at our infrastructure are handled efficiently by our professionals, helping us manufacture quality assured products and complete operations within the promised time frame.',
         missionTitle: 'Our Mission',
         missionDesc: 'To provide innovative, reliable, and customer-focused enterprise solutions that create lasting value for our clients.',
         visionTitle: 'Our Vision',
@@ -432,14 +447,15 @@ const LANGUAGE_CONTENT = {
       why: {
         badge: 'Our Advantage',
         title: 'Why Choose A1 Enterprise?',
-        subtitle: 'We combine expertise, innovation, and dedication to deliver exceptional results',
+        subtitle: 'Working in compliance with industry standards, we focus on meeting customer needs with dependable products and modern facilities.',
+        intro: 'We have attained a strong foothold in the market owing to the support of skilled professionals, quality-focused processes, and a customer-first approach.',
         cards: [
-          { title: 'Experienced Team', desc: 'Our team of 50+ seasoned professionals brings decades of combined industry expertise to every project.' },
-          { title: 'Quality Assurance', desc: 'Rigorous quality standards and dependable processes ensure every deliverable meets high benchmarks.' },
-          { title: 'Fast Delivery', desc: 'We respect your timelines and deliver with speed, consistency, and care.' },
-          { title: 'Customer Support', desc: 'A dedicated support team is ready to assist you from consultation to after-sales help.' },
-          { title: 'Reliable Solutions', desc: 'Our practical solutions are built to perform consistently for your business needs.' },
-          { title: 'Competitive Pricing', desc: 'Premium products and services at fair rates without compromising on quality.' }
+          { title: 'Ethical Business Policies', desc: 'We follow transparent and ethical business practices in every process to build long-term trust with our customers.' },
+          { title: 'Customized Solutions', desc: 'We understand varied customer requirements and offer practical, customized solutions for different applications.' },
+          { title: 'Quality Tested Products', desc: 'Each product is checked carefully to ensure genuine quality, dependable performance, and compliance with expected standards.' },
+          { title: 'Excellent Customer Support', desc: 'Our team stays ready to assist customers at every step and works closely to address their requirements effectively.' },
+          { title: 'Timely Delivery of Consignments', desc: 'Coordinated departments and efficient operations help us complete and deliver orders within the promised time frame.' },
+          { title: 'Competitive Prices', desc: 'We offer quality products at competitive prices, giving customers dependable value without compromising standards.' }
         ]
       },
       industries: {
@@ -701,6 +717,21 @@ const LANGUAGE_CONTENT = {
         storyBadge: 'हमारी कहानी',
         storyTitle: 'व्यवसायिक विकास को आगे बढ़ाते हुए <span class="text-blue">2009 से</span>',
         storyDesc: 'A1 Enterprise की स्थापना एक स्पष्ट सोच के साथ हुई थी: ऐसे विश्वसनीय समाधान देना जो व्यवसायों को आगे बढ़ने में मदद करें। 15 से अधिक वर्षों में हमने ईमानदारी, नवाचार और प्रभावी परिणामों की मजबूत पहचान बनाई है।',
+        detailTexts: [
+          'हमारे पास उपयुक्त और आधुनिक इन्फ्रास्ट्रक्चर है जो नवीन तकनीक से सुसज्जित है। हमारी आधुनिक व्यवस्था हमें बाजार में मजबूत पहचान बनाने में मदद करती है और हम उत्कृष्ट गुणवत्ता वाले कच्चे माल से बने genuine और quality-tested उत्पाद प्रदान करते हैं जो अंतरराष्ट्रीय गुणवत्ता मानकों को पूरा करते हैं।',
+          'हमारी यूनिट manufacturing, quality testing, sales और marketing जैसे विशेष विभागों में विभाजित है, जिससे बेहतर समन्वय और समय पर डिलीवरी संभव हो पाती है।'
+        ],
+        teamTitle: 'हमारी टीम',
+        teamIntro: 'हमारे साथ अत्यंत कुशल और अनुभवी पेशेवरों की सक्षम टीम जुड़ी है, जिन्हें उत्पादन प्रक्रिया और उपयोग होने वाली तकनीकों का पूरा ज्ञान है। उनकी मेहनत और विशेषज्ञता हमें ग्राहकों की विविध आवश्यकताओं को पूरा करने में मदद करती है।',
+        teamRoles: [
+          'डिजाइनर्स',
+          'मशीन ऑपरेटर्स',
+          'अकुशल श्रमिक',
+          'क्वालिटी कंट्रोलर्स',
+          'वेयरहाउसिंग और पैकेजिंग विशेषज्ञ',
+          'सेल्स और मार्केटिंग प्रोफेशनल्स'
+        ],
+        teamOutro: 'हमारे इन्फ्रास्ट्रक्चर में लगे सभी आधुनिक मशीनों को हमारे प्रोफेशनल्स कुशलता से संभालते हैं, जिससे quality assured उत्पाद बनते हैं और सभी कार्य तय समय सीमा में पूरे होते हैं।',
         missionTitle: 'हमारा मिशन',
         missionDesc: 'ऐसे नवाचारी, विश्वसनीय और ग्राहक-केंद्रित समाधान प्रदान करना जो हमारे ग्राहकों के लिए दीर्घकालिक मूल्य बनाएं।',
         visionTitle: 'हमारी दृष्टि',
@@ -728,14 +759,15 @@ const LANGUAGE_CONTENT = {
       why: {
         badge: 'हमारी विशेषता',
         title: 'A1 Enterprise क्यों चुनें?',
-        subtitle: 'हम विशेषज्ञता, नवाचार और समर्पण के साथ बेहतरीन परिणाम देते हैं',
+        subtitle: 'उद्योग मानकों के अनुसार कार्य करते हुए हम ग्राहकों की जरूरतों को विश्वसनीय उत्पादों और आधुनिक सुविधाओं के साथ पूरा करते हैं।',
+        intro: 'कुशल पेशेवरों, गुणवत्ता-केंद्रित प्रक्रियाओं और customer-first approach के कारण हमने बाजार में मजबूत पहचान बनाई है।',
         cards: [
-          { title: 'अनुभवी टीम', desc: '50+ अनुभवी पेशेवरों की हमारी टीम हर प्रोजेक्ट में वर्षों का अनुभव लेकर आती है।' },
-          { title: 'गुणवत्ता आश्वासन', desc: 'मजबूत गुणवत्ता मानक और भरोसेमंद प्रक्रियाएं हर डिलीवरी को उच्च स्तर पर बनाए रखती हैं।' },
-          { title: 'तेज डिलीवरी', desc: 'हम आपकी समयसीमा का सम्मान करते हैं और गति, निरंतरता और जिम्मेदारी के साथ काम पूरा करते हैं।' },
-          { title: 'ग्राहक सहायता', desc: 'सलाह से लेकर बिक्री के बाद की सहायता तक हमारी समर्पित टीम आपके साथ रहती है।' },
-          { title: 'भरोसेमंद समाधान', desc: 'हमारे व्यावहारिक समाधान आपके व्यवसाय की जरूरतों के लिए लगातार परिणाम देते हैं।' },
-          { title: 'उचित कीमत', desc: 'गुणवत्ता से समझौता किए बिना प्रीमियम उत्पाद और सेवाएं उचित दरों पर।' }
+          { title: 'नैतिक व्यवसाय नीतियां', desc: 'हम हर प्रक्रिया में पारदर्शी और नैतिक व्यवसायिक नीतियों का पालन करते हैं, जिससे ग्राहकों का भरोसा बना रहता है।' },
+          { title: 'कस्टमाइज़्ड समाधान', desc: 'हम ग्राहकों की अलग-अलग जरूरतों को समझकर व्यावहारिक और customized solutions प्रदान करते हैं।' },
+          { title: 'गुणवत्ता परीक्षण किए गए उत्पाद', desc: 'हर उत्पाद को सावधानीपूर्वक जांचा जाता है ताकि genuine quality, भरोसेमंद प्रदर्शन और अपेक्षित मानकों का पालन सुनिश्चित हो।' },
+          { title: 'उत्कृष्ट ग्राहक सहायता', desc: 'हमारी टीम हर चरण में ग्राहकों की सहायता के लिए तैयार रहती है और उनकी जरूरतों को प्रभावी ढंग से पूरा करती है।' },
+          { title: 'समय पर कंसाइनमेंट डिलीवरी', desc: 'समन्वित विभाग और कुशल संचालन हमें तय समय सीमा में ऑर्डर पूरा करके डिलीवर करने में मदद करते हैं।' },
+          { title: 'प्रतिस्पर्धी कीमतें', desc: 'हम गुणवत्ता से समझौता किए बिना प्रतिस्पर्धी कीमतों पर उत्पाद उपलब्ध कराते हैं।' }
         ]
       },
       industries: {
@@ -1070,6 +1102,11 @@ function applyHomeTranslations(bundle) {
   setText('.about-content .section-badge', home.about.storyBadge);
   setHTML('.about-content h2', home.about.storyTitle);
   setText('.about-desc', home.about.storyDesc);
+  setTextList('.about-detail-text', home.about.detailTexts || []);
+  setText('.about-team-title', home.about.teamTitle || '');
+  setText('.about-team-intro', home.about.teamIntro || '');
+  setTextList('.about-team-roles li', home.about.teamRoles || []);
+  setText('.about-team-outro', home.about.teamOutro || '');
   setText('.mission-vision .mv-card:nth-child(1) h4', home.about.missionTitle);
   setText('.mission-vision .mv-card:nth-child(1) p', home.about.missionDesc);
   setText('.mission-vision .mv-card:nth-child(2) h4', home.about.visionTitle);
@@ -1096,6 +1133,7 @@ function applyHomeTranslations(bundle) {
   setText('.why-us .section-badge', home.why.badge);
   setText('.why-us .section-title', home.why.title);
   setText('.why-us .section-subtitle', home.why.subtitle);
+  setText('.why-intro', home.why.intro || '');
   document.querySelectorAll('.why-card').forEach(function (card, index) {
     const content = home.why.cards[index];
     if (!content) return;

@@ -1454,6 +1454,18 @@ select {
   line-height: 1.8;
 }
 
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.about-detail-text {
+  font-size: var(--text-base);
+  color: var(--color-gray-500);
+  line-height: 1.8;
+}
+
 /* Mission & Vision Cards */
 .mission-vision {
   display: flex;
@@ -1498,6 +1510,40 @@ select {
   font-size: var(--text-sm);
   color: var(--color-gray-500);
   line-height: 1.7;
+}
+
+.about-team-block {
+  padding: var(--space-6);
+  background: var(--color-gray-50);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-2xl);
+}
+
+.about-team-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-3);
+}
+
+.about-team-intro,
+.about-team-outro {
+  font-size: var(--text-sm);
+  color: var(--color-gray-500);
+  line-height: 1.8;
+}
+
+.about-team-roles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3) var(--space-5);
+  margin: var(--space-4) 0;
+  padding-left: 1.2rem;
+}
+
+.about-team-roles li {
+  color: var(--color-gray-700);
+  font-weight: 500;
 }
 
 /* Core Values */
@@ -2404,6 +2450,15 @@ body.modal-open {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
+}
+
+.why-intro {
+  max-width: 860px;
+  margin: var(--space-3) auto 0;
+  text-align: center;
+  font-size: var(--text-base);
+  color: var(--color-gray-500);
+  line-height: 1.8;
 }
 
 .why-card {
