@@ -503,7 +503,7 @@ const LANGUAGE_CONTENT = {
         success: 'Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.'
       },
       footer: {
-        brandDesc: 'A leading corporate enterprise delivering world-class solutions across industries. Building better businesses through innovation since 2009.',
+        brandDesc: 'From water conservation and agricultural applications to industrial covering solutions, we deliver premium-quality Tarpaulins, Pond Liners, and Poultry Farm Products that stand the test of time.',
         headings: ['Our Services', 'Quick Links', 'Contact Info'],
         serviceLinks: ['Industrial Solutions', 'Engineering Services', 'Manufacturing Support', 'Business Consulting', 'Project Management', 'Supply Chain Solutions'],
         quickLinks: ['Home', 'About Us', 'Our Projects', 'Industries', 'Testimonials', 'Contact Us'],
@@ -815,7 +815,7 @@ const LANGUAGE_CONTENT = {
         success: 'धन्यवाद! आपका संदेश सफलतापूर्वक भेज दिया गया है। हम 24 घंटों के भीतर आपसे संपर्क करेंगे।'
       },
       footer: {
-        brandDesc: 'A1 Enterprise विभिन्न उद्योगों के लिए विश्वसनीय समाधान देने वाला अग्रणी उद्यम है। 2009 से बेहतर व्यवसाय निर्माण की दिशा में कार्यरत।',
+        brandDesc: 'जल संरक्षण और कृषि उपयोग से लेकर औद्योगिक कवरिंग समाधानों तक, हम प्रीमियम गुणवत्ता वाले Tarpaulins, Pond Liners और Poultry Farm Products उपलब्ध कराते हैं जो लंबे समय तक टिके रहते हैं।',
         headings: ['हमारी सेवाएं', 'त्वरित लिंक', 'संपर्क जानकारी'],
         serviceLinks: ['औद्योगिक समाधान', 'इंजीनियरिंग सेवाएं', 'मैन्युफैक्चरिंग सहायता', 'बिजनेस कंसल्टिंग', 'प्रोजेक्ट मैनेजमेंट', 'सप्लाई चेन समाधान'],
         quickLinks: ['होम', 'हमारे बारे में', 'हमारे प्रोजेक्ट्स', 'उद्योग', 'प्रशंसापत्र', 'संपर्क करें'],
