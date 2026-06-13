@@ -406,8 +406,7 @@ const LANGUAGE_CONTENT = {
         storyTitle: 'Driving Business Growth <span class="text-blue">Since 2009</span>',
         storyDesc: 'A1 Enterprise was founded with a clear vision: to deliver world-class corporate solutions that empower businesses to thrive. Over 15 years, we\'ve built a reputation for integrity, innovation, and impactful results.',
         detailTexts: [
-          'We are supported with the most appropriate and advanced infrastructure equipped with innovative technology. Our modern setup helps us maintain a reputable image in the market while offering genuine and quality-tested products made from optimum quality raw material to meet international quality standards.',
-          'Our infrastructure is segregated into specialized departments such as manufacturing, quality testing, sales, and marketing, enabling smooth coordination and timely delivery of products.'
+          'We are supported with the most appropriate and advanced infrastructure equipped with innovative technology. Our modern setup helps us maintain a reputable image in the market while offering genuine and quality-tested products made from optimum quality raw material to meet international quality standards.'
         ],
         teamTitle: 'Our Team',
         teamIntro: 'We are backed by a competent team of immensely skilled professionals who possess strong domain knowledge and practical understanding of the technologies used in the production process. Their dedication helps us meet the diverse requirements of customers.',
@@ -420,10 +419,6 @@ const LANGUAGE_CONTENT = {
           'Sales and marketing professionals'
         ],
         teamOutro: 'All the latest machines installed at our infrastructure are handled efficiently by our professionals, helping us manufacture quality assured products and complete operations within the promised time frame.',
-        missionTitle: 'Our Mission',
-        missionDesc: 'To provide innovative, reliable, and customer-focused enterprise solutions that create lasting value for our clients.',
-        visionTitle: 'Our Vision',
-        visionDesc: 'To be the most trusted enterprise partner, recognized globally for our excellence and transformative impact.',
         valuesTitle: 'Core Values',
         values: ['Integrity', 'Quality', 'Innovation', 'Commitment', 'Excellence'],
         workWithUs: 'Work With Us'
@@ -718,8 +713,7 @@ const LANGUAGE_CONTENT = {
         storyTitle: 'व्यवसायिक विकास को आगे बढ़ाते हुए <span class="text-blue">2009 से</span>',
         storyDesc: 'A1 Enterprise की स्थापना एक स्पष्ट सोच के साथ हुई थी: ऐसे विश्वसनीय समाधान देना जो व्यवसायों को आगे बढ़ने में मदद करें। 15 से अधिक वर्षों में हमने ईमानदारी, नवाचार और प्रभावी परिणामों की मजबूत पहचान बनाई है।',
         detailTexts: [
-          'हमारे पास उपयुक्त और आधुनिक इन्फ्रास्ट्रक्चर है जो नवीन तकनीक से सुसज्जित है। हमारी आधुनिक व्यवस्था हमें बाजार में मजबूत पहचान बनाने में मदद करती है और हम उत्कृष्ट गुणवत्ता वाले कच्चे माल से बने genuine और quality-tested उत्पाद प्रदान करते हैं जो अंतरराष्ट्रीय गुणवत्ता मानकों को पूरा करते हैं।',
-          'हमारी यूनिट manufacturing, quality testing, sales और marketing जैसे विशेष विभागों में विभाजित है, जिससे बेहतर समन्वय और समय पर डिलीवरी संभव हो पाती है।'
+          'हमारे पास उपयुक्त और आधुनिक इन्फ्रास्ट्रक्चर है जो नवीन तकनीक से सुसज्जित है। हमारी आधुनिक व्यवस्था हमें बाजार में मजबूत पहचान बनाने में मदद करती है और हम उत्कृष्ट गुणवत्ता वाले कच्चे माल से बने genuine और quality-tested उत्पाद प्रदान करते हैं जो अंतरराष्ट्रीय गुणवत्ता मानकों को पूरा करते हैं।'
         ],
         teamTitle: 'हमारी टीम',
         teamIntro: 'हमारे साथ अत्यंत कुशल और अनुभवी पेशेवरों की सक्षम टीम जुड़ी है, जिन्हें उत्पादन प्रक्रिया और उपयोग होने वाली तकनीकों का पूरा ज्ञान है। उनकी मेहनत और विशेषज्ञता हमें ग्राहकों की विविध आवश्यकताओं को पूरा करने में मदद करती है।',
@@ -732,10 +726,6 @@ const LANGUAGE_CONTENT = {
           'सेल्स और मार्केटिंग प्रोफेशनल्स'
         ],
         teamOutro: 'हमारे इन्फ्रास्ट्रक्चर में लगे सभी आधुनिक मशीनों को हमारे प्रोफेशनल्स कुशलता से संभालते हैं, जिससे quality assured उत्पाद बनते हैं और सभी कार्य तय समय सीमा में पूरे होते हैं।',
-        missionTitle: 'हमारा मिशन',
-        missionDesc: 'ऐसे नवाचारी, विश्वसनीय और ग्राहक-केंद्रित समाधान प्रदान करना जो हमारे ग्राहकों के लिए दीर्घकालिक मूल्य बनाएं।',
-        visionTitle: 'हमारी दृष्टि',
-        visionDesc: 'उत्कृष्टता और प्रभाव के लिए विश्व स्तर पर पहचाने जाने वाले सबसे भरोसेमंद उद्यम सहयोगी बनना।',
         valuesTitle: 'मुख्य मूल्य',
         values: ['ईमानदारी', 'गुणवत्ता', 'नवाचार', 'प्रतिबद्धता', 'उत्कृष्टता'],
         workWithUs: 'हमारे साथ काम करें'
@@ -1107,10 +1097,6 @@ function applyHomeTranslations(bundle) {
   setText('.about-team-intro', home.about.teamIntro || '');
   setTextList('.about-team-roles li', home.about.teamRoles || []);
   setText('.about-team-outro', home.about.teamOutro || '');
-  setText('.mission-vision .mv-card:nth-child(1) h4', home.about.missionTitle);
-  setText('.mission-vision .mv-card:nth-child(1) p', home.about.missionDesc);
-  setText('.mission-vision .mv-card:nth-child(2) h4', home.about.visionTitle);
-  setText('.mission-vision .mv-card:nth-child(2) p', home.about.visionDesc);
   setText('.values-title', home.about.valuesTitle);
   setElementTextList('.value-tag', home.about.values);
   setElementText(document.querySelector('.about-content .btn.btn-primary'), home.about.workWithUs);
