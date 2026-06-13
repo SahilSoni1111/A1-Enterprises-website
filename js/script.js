@@ -431,10 +431,7 @@ const LANGUAGE_CONTENT = {
         viewAll: 'View All Services',
         cards: [
           { title: 'RPE Pond Liner', price: 'Price: Add Here', chip: 'Installation Available' },
-          { title: 'Agriculture Tarpaulin', price: 'Price: Add Here', chip: 'IS 15351' },
-          { title: 'Tarpaulin for Fisheries & Water Storage', price: 'Price: Add Here', chip: 'Water Storage' },
-          { title: 'Tarpaulin for Covering Materials', price: 'Price: Add Here', chip: 'Material Covering' },
-          { title: 'Truck Tarpaulin', price: 'Price: Add Here', chip: 'All Sizes' },
+          { title: 'Agriculture & Covering Tarpaulin', price: 'Price: Add Here', chip: 'IS 15351' },
           { title: 'HDPE & PP Bags', price: 'Price: Add Here', chip: 'Bulk Supply' },
           { title: 'Poultry Curtains', price: 'Price: Add Here', chip: 'Poultry Use' }
         ]
@@ -519,47 +516,14 @@ const LANGUAGE_CONTENT = {
           ]
         },
         {
-          title: 'Agriculture Tarpaulin',
+          title: 'Agriculture & Covering Tarpaulin',
           chip: 'IS 15351',
-          desc: 'UV stabilised tarpaulin sheets for agricultural use, ideal for crop protection, temporary sheds, field coverage, and seasonal storage at reasonable rates.',
+          desc: 'UV stabilised tarpaulin sheets for agricultural and general material covering use, ideal for crop protection, raw materials, warehouse stock, machinery, and seasonal storage.',
           features: [
             'UV stabilised quality — IS 15351 certified',
-            '5 years warranty',
-            'Available in multiple sizes',
-            'Waterproof and tear resistant'
-          ]
-        },
-        {
-          title: 'Tarpaulin for Fisheries & Water Storage',
-          chip: 'Water Storage',
-          desc: 'Reliable tarpaulin solutions for fish ponds, hatchery support, tank lining, and water storage projects where strength and weather resistance are important.',
-          features: [
-            'Suitable for fisheries and hatchery applications',
-            'Helps secure clean water storage',
-            'Available with fitting assistance',
-            'Weather and UV resistant material'
-          ]
-        },
-        {
-          title: 'Tarpaulin for Covering Materials',
-          chip: 'Material Covering',
-          desc: 'Strong covering tarpaulin for machinery, raw materials, finished goods, warehouse stock, and outdoor storage where weather protection is required.',
-          features: [
-            'Protects against sun, dust, and rain',
-            'Useful for farm and industrial stock',
-            'Custom size supply available',
-            'Heavy-duty grommets for secure tying'
-          ]
-        },
-        {
-          title: 'Truck Tarpaulin',
-          chip: 'All Sizes',
-          desc: 'Truck tarpaulin available in all sizes for transport coverage, side curtain applications, and load protection during long-distance and local movement.',
-          features: [
-            'Available in all standard and custom sizes',
-            'Built for heavy transport use',
-            'Strong eyelets and stitching options',
-            'Suitable for open trucks and trailers'
+            'Protects against sun, dust, rain, and tearing',
+            'Available in multiple sizes and custom GSM',
+            'Suitable for temporary sheds and outdoor storage'
           ]
         },
         {
@@ -659,10 +623,7 @@ const LANGUAGE_CONTENT = {
       orderCta: 'Place Order for Any Product',
       cards: [
         { title: 'RPE Pond Liner', chip: 'Installation Available' },
-        { title: 'Agriculture Tarpaulin', chip: 'IS 15351' },
-        { title: 'Tarpaulin for Fisheries & Water Storage', chip: 'Water Storage' },
-        { title: 'Tarpaulin for Covering Materials', chip: 'Material Covering' },
-        { title: 'Truck Tarpaulin', chip: 'All Sizes' },
+        { title: 'Agriculture & Covering Tarpaulin', chip: 'IS 15351' },
         { title: 'HDPE & PP Bags', chip: 'Bulk Supply' },
         { title: 'Poultry Curtains', chip: 'Poultry Use' }
       ]
@@ -738,10 +699,7 @@ const LANGUAGE_CONTENT = {
         viewAll: 'सभी सेवाएं देखें',
         cards: [
           { title: 'RPE Pond Liner', price: 'कीमत: यहां जोड़ें', chip: 'इंस्टॉलेशन उपलब्ध' },
-          { title: 'Agriculture Tarpaulin', price: 'कीमत: यहां जोड़ें', chip: 'IS 15351' },
-          { title: 'Fisheries और Water Storage के लिए Tarpaulin', price: 'कीमत: यहां जोड़ें', chip: 'जल भंडारण' },
-          { title: 'कवरिंग मटेरियल के लिए Tarpaulin', price: 'कीमत: यहां जोड़ें', chip: 'मटेरियल कवरिंग' },
-          { title: 'Truck Tarpaulin', price: 'कीमत: यहां जोड़ें', chip: 'सभी साइज' },
+          { title: 'कृषि और कवरिंग तिरपाल', price: 'कीमत: यहां जोड़ें', chip: 'IS 15351' },
           { title: 'HDPE और PP Bags', price: 'कीमत: यहां जोड़ें', chip: 'थोक सप्लाई' },
           { title: 'Poultry Curtains', price: 'कीमत: यहां जोड़ें', chip: 'पोल्ट्री उपयोग' }
         ]
@@ -826,47 +784,14 @@ const LANGUAGE_CONTENT = {
           ]
         },
         {
-          title: 'Agriculture Tarpaulin',
+          title: 'कृषि और कवरिंग तिरपाल',
           chip: 'IS 15351',
-          desc: 'कृषि उपयोग के लिए UV stabilised tarpaulin sheets, जो crop protection, अस्थायी शेड, field coverage और seasonal storage के लिए उपयुक्त हैं।',
+          desc: 'कृषि और सामान्य सामग्री कवर करने के लिए UV stabilised तिरपाल शीट्स, जो फसल सुरक्षा, कच्चे माल, मशीनों, गोदाम स्टॉक और मौसमी भंडारण के लिए आदर्श हैं।',
           features: [
             'UV stabilised गुणवत्ता — IS 15351 certified',
-            '5 वर्ष की वारंटी',
-            'अनेक साइज में उपलब्ध',
-            'वॉटरप्रूफ और tear resistant'
-          ]
-        },
-        {
-          title: 'Fisheries और Water Storage के लिए Tarpaulin',
-          chip: 'जल भंडारण',
-          desc: 'Fish ponds, hatchery support, tank lining और water storage projects के लिए मजबूत और भरोसेमंद tarpaulin समाधान।',
-          features: [
-            'Fisheries और hatchery applications के लिए उपयुक्त',
-            'साफ पानी के सुरक्षित भंडारण में सहायक',
-            'फिटिंग सहायता उपलब्ध',
-            'मौसम और UV resistant material'
-          ]
-        },
-        {
-          title: 'कवरिंग मटेरियल के लिए Tarpaulin',
-          chip: 'मटेरियल कवरिंग',
-          desc: 'मशीनरी, raw materials, finished goods, warehouse stock और outdoor storage के लिए मजबूत covering tarpaulin।',
-          features: [
-            'धूप, धूल और बारिश से सुरक्षा',
-            'कृषि और औद्योगिक स्टॉक के लिए उपयोगी',
-            'कस्टम साइज सप्लाई उपलब्ध',
-            'मजबूत grommets से सुरक्षित बांधने की सुविधा'
-          ]
-        },
-        {
-          title: 'Truck Tarpaulin',
-          chip: 'सभी साइज',
-          desc: 'Transport coverage, side curtain applications और load protection के लिए सभी साइज में truck tarpaulin उपलब्ध है।',
-          features: [
-            'स्टैंडर्ड और कस्टम सभी साइज उपलब्ध',
-            'भारी परिवहन उपयोग के लिए उपयुक्त',
-            'मजबूत eyelets और stitching options',
-            'Open trucks और trailers के लिए उपयुक्त'
+            'धूप, धूल, बारिश और फटने से सुरक्षा',
+            'अनेक साइज और कस्टम GSM में उपलब्ध',
+            'अस्थायी शेड और बाहरी भंडारण के लिए उपयुक्त'
           ]
         },
         {
@@ -966,10 +891,7 @@ const LANGUAGE_CONTENT = {
       orderCta: 'किसी भी उत्पाद के लिए ऑर्डर करें',
       cards: [
         { title: 'RPE Pond Liner', chip: 'इंस्टॉलेशन उपलब्ध' },
-        { title: 'Agriculture Tarpaulin', chip: 'IS 15351' },
-        { title: 'Fisheries और Water Storage के लिए Tarpaulin', chip: 'जल भंडारण' },
-        { title: 'कवरिंग मटेरियल के लिए Tarpaulin', chip: 'मटेरियल कवरिंग' },
-        { title: 'Truck Tarpaulin', chip: 'सभी साइज' },
+        { title: 'कृषि और कवरिंग तिरपाल', chip: 'IS 15351' },
         { title: 'HDPE और PP Bags', chip: 'थोक सप्लाई' },
         { title: 'Poultry Curtains', chip: 'पोल्ट्री उपयोग' }
       ]
@@ -1104,7 +1026,7 @@ function applyHomeTranslations(bundle) {
   setText('#services .section-badge', home.services.badge);
   setText('#services .section-title', home.services.title);
   setText('#services .section-subtitle', home.services.subtitle);
-  setTextList('.service-card-cover-placeholder span', Array(7).fill(home.services.addPhoto));
+  setTextList('.service-card-cover-placeholder span', Array(10).fill(home.services.addPhoto));
   document.querySelectorAll('#services .service-card').forEach(function (card, index) {
     const content = home.services.cards[index];
     if (!content) return;
@@ -1218,7 +1140,7 @@ function applyServicesTranslations(bundle) {
   setText('.services-page-hero .section-title', services.heroTitle);
   setText('.services-page-hero .section-subtitle', services.heroSubtitle);
   setElementText(document.querySelector('.services-order-cta'), services.orderCta);
-  setTextList('.service-card-cover-placeholder span', Array(6).fill(services.addPhoto));
+  setTextList('.service-card-cover-placeholder span', Array(10).fill(services.addPhoto));
 
   document.querySelectorAll('.services-grid .service-card').forEach(function (card, index) {
     const content = services.cards[index];
