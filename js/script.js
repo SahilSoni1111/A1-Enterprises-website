@@ -390,7 +390,7 @@ const LANGUAGE_CONTENT = {
     home: {
       title: 'A1 Enterprise | Quality You Can Trust',
       description: 'A1 Enterprise - Quality You Can Trust. Reliable agricultural and industrial products for businesses.',
-      heroBadge: 'Trusted By 300+ Companies Worldwide',
+      heroBadge: '300+ Customers Served',
       heroHighlight: 'Quality You Can Trust',
       heroSubtitle: 'A1 Enterprise provides reliable, innovative, and customer-focused solutions that help businesses grow and succeed in today\'s competitive market.',
       heroButtons: ['Explore Services', 'Contact Us'],
@@ -702,7 +702,7 @@ const LANGUAGE_CONTENT = {
     home: {
       title: 'A1 Enterprise | भरोसा जिस पर आप कर सकें',
       description: 'A1 Enterprise - भरोसेमंद कृषि और औद्योगिक उत्पाद।',
-      heroBadge: 'दुनियाभर की 300+ कंपनियों का भरोसा',
+      heroBadge: '300+ ग्राहकों की सेवा की',
       heroHighlight: 'भरोसे की गुणवत्ता',
       heroSubtitle: 'A1 Enterprise भरोसेमंद, नवाचारी और ग्राहक-केंद्रित समाधान प्रदान करता है जो व्यवसायों को आगे बढ़ने और प्रतिस्पर्धी बाजार में सफल होने में मदद करते हैं।',
       heroButtons: ['सेवाएं देखें', 'संपर्क करें'],
